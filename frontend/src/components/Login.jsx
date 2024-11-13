@@ -12,8 +12,8 @@ export default function AuthForm({ isRegister = false }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const apiUrl = isRegister
-      ? `http://localhost:5000/api/auth/register`
-      : `http://localhost:5000/api/auth/login`;
+      ? `http://localhost:4000/api/auth/register`
+      : `http://localhost:4000/api/auth/login`;
     const payload = isRegister
       ? { username, email, password }
       : { email, password };
